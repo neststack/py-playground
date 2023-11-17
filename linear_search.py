@@ -19,9 +19,9 @@ def verify(result):
   else:
     print("Target not found in list.","Steps:",steps)
     
-numbers = [1,2,3,4,5,6,7,8,9]
-result = linear_search(numbers, 12)
+numbers = range(0,10000)
+result = linear_search(numbers, 12000)
 verify(result)
 
-result = linear_search(numbers, 6)
+result = linear_search(numbers, 1200)
 verify(result)
