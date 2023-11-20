@@ -5,9 +5,10 @@ def binary_search(list, target):
   steps = 0
   first = 0
   last = len(list) - 1
+  
   while first <= last:
     midpoint = (first + last)//2
-    print('steps',steps,'first',first,'last',last,'midpoint',midpoint)
+    # print('steps',steps,'first',first,'last',last,'midpoint',midpoint)
     steps += 1
     if list[midpoint] == target:
       return {'index': midpoint,'steps':steps}
@@ -27,8 +28,8 @@ def verify(result):
     print("Target not found in list.","Steps:",steps)
     
 numbers = range(0,10000)
-# result = binary_search(numbers, 12000)
-# verify(result)
+result = binary_search(numbers, 12000)
+verify(result)
 
 result = binary_search(numbers, 1200)
 verify(result)
