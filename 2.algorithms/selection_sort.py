@@ -41,7 +41,7 @@ def calc_steps(length):
     n -= 1
   return s
 
-print(selection_sort(five))
-print(selection_sort(eighth))
-selection_sort(one_million)
+# print(selection_sort(five))
+# print(selection_sort(eighth))
+selection_sort(ten_thousand)
 # print(calc_steps(5),calc_steps(8),calc_steps(10000))
